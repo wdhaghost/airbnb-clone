@@ -4,10 +4,37 @@
 
 body {
   margin: 0;
+  font-family: Poppins,sans-serif;
 }
 
 .navbar{
   height:70px;
   padding:22px 30px;
   box-shadow: 0 3px 7px rgba(0,0,0, 0.1);
+}
+
+.hero{
+  padding: 26px 36px ;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.hero-pic{
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+}
+
+.hero-title{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+.hero-text{
+  width: 320px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 110%;
+  margin-top: 0;
 }
