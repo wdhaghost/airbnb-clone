@@ -1,40 +1,100 @@
-*{
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
-.navbar{
-  height:70px;
-  padding:22px 30px;
-  box-shadow: 0 3px 7px rgba(0,0,0, 0.1);
+.navbar {
+  height: 70px;
+  padding: 22px 30px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-.hero{
-  padding: 26px 36px ;
-  height: 100dvh;
+.hero {
+  padding: 26px 36px;
   display: flex;
   flex-direction: column;
 }
-.hero-pic{
+
+.hero-pic {
   width: 100%;
   max-width: 400px;
   align-self: center;
 }
 
-.hero-title{
+.hero-title {
   font-size: 36px;
   font-weight: 600;
   line-height: 110%;
   margin-bottom: 16px;
 }
-.hero-text{
+
+.hero-text {
   width: 320px;
   font-size: 16px;
   font-weight: 300;
   line-height: 110%;
   margin-top: 0;
+}
+
+.card {
+  position: relative;
+  width: 175px;
+}
+
+.card-pic {
+  width: 100%;
+
+}
+
+.card-status {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 110%;
+  background-color: rgb(255, 255, 255);
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.card-rating>img {
+  height: 14px;
+  aspect-ratio: 1;
+}
+
+.card-rate {
+  color: #222222;
+
+}
+
+.card-review {
+  color: #918E9B;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%;
+}
+
+.card-info {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.card-info-price{
+  font-weight: 600;
 }
