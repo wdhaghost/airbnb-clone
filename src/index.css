@@ -40,9 +40,15 @@ body {
   margin-top: 0;
 }
 
+.cards{
+  display: flex;
+  overflow: scroll;
+  gap: 18px;
+}
 .card {
   position: relative;
   width: 175px;
+  flex-shrink: 0;
 }
 
 .card-pic {

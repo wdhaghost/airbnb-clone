@@ -7,23 +7,18 @@ import data from './data'
 
 export default function App() {
 
-  const cards = data.map(card=>{
-    return <Card 
+  const cards = data.map(card => {
+    return <Card
       key={card.id}
-      img={card.coverImg}
-      openSpots={card.openSpots}
-      rating={card.stats.rating}
-      title={card.title}
-      price={card.price}
-      rate={card.stats.rating}
-      review={card.stats.reviewCount}
-      location={card.location}/>
+      {...card} />
   })
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-     {cards}
+      <Navbar />
+      <Hero />
+      <section className='cards'>
+        {cards}
+      </section>
     </div>
   );
 }
